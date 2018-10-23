@@ -1,0 +1,85 @@
+header
+  nav, .logo, .desc
+    padding:
+      top: 2rem
+      bottom: 2rem
+  nav
+    @media print, screen and (min-width: 64em)
+      margin-top: 8rem
+    li a
+      margin: 0 0 0 2rem
+      height: 23px
+      font-size: 0
+      @media print, screen and (min-width: 64em)
+        height: 30px
+  .home, .anim, .artw, .about, .contact
+    background:
+      image: url("../img/navbar.png")
+      size: 493px auto
+    @media print, screen and (min-width: 64em)
+      background-size: auto auto
+  .home 
+    width: 55px
+  .anim 
+    width: 113px
+  .artw 
+    width: 118px
+  .about 
+    width: 106px
+  .contact 
+    width: 87px
+  @media print, screen and (min-width: 64em)
+    .home 
+      width: 70px
+    .anim 
+      width: 144px
+    .artw 
+      width: 150px
+    .about 
+      width: 135px
+    .contact 
+      width: 112px
+
+.indexpg .home, .subpg .home:hover 
+  background-position: 0 0
+.indexpg .anim, .subpg .anim:hover 
+  background-position: -58px 0
+.indexpg .artw, .subpg .artw:hover 
+  background-position: -175px 0
+.indexpg .about, .subpg .about:hover 
+  background-position: -296px 0
+.indexpg .contact, .subpg .contact:hover 
+  background-position: -404px 0
+
+.indexpg .home:hover, .subpg .home 
+  background-position: 0 -25px
+.indexpg .anim:hover, .subpg .anim 
+  background-position: -58px -25px
+.indexpg .artw:hover, .subpg .artw 
+  background-position: -175px -25px
+.indexpg .about:hover, .subpg .about 
+  background-position: -296px -25px
+.indexpg .contact:hover, .subpg .contact 
+  background-position: -404px -25px
+  
+@media print, screen and (min-width: 64em)
+  .indexpg .home, .subpg .home:hover
+    background-position: 0 0
+  .indexpg .anim, .subpg .anim:hover
+    background-position: -75px 0
+  .indexpg .artw, .subpg .artw:hover
+    background-position: -225px 0
+  .indexpg .about, .subpg .about:hover
+    background-position: -380px 0
+  .indexpg .contact, .subpg .contact:hover
+    background-position: -520px 0
+  .indexpg .home:hover, .subpg .home
+    background-position: 0 -32px
+  .indexpg .anim:hover, .subpg .anim
+    background-position: -75px -32px
+  .indexpg .artw:hover, .subpg .artw
+    background-position: -225px -32px
+  .indexpg .about:hover, .subpg .about
+    background-position: -380px -32px
+  .indexpg .contact:hover, .subpg .contact
+    background-position: -520px -32px

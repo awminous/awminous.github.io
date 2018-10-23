@@ -1,0 +1,41 @@
+.subpg-h1 
+  background:
+    repeat: no-repeat
+    position: center center
+    size: 1465px 200px
+    color: $bluegreen
+  min-height: 250px
+  color: $bgyellow
+  h1
+    position: relative
+    top: 2.5rem
+
+@media print, screen and (min-width: 40em)
+  .subpg-h1 
+    background-size: auto auto
+    min-height: 300px
+    h1
+      top: 3.5rem
+
+.anim-h1
+  background-image: url("../img/anim-h1.jpg")
+
+.artw-h1
+  background-image: url("../img/artw-h1.jpg")
+  
+.anim-display
+  padding-top: 3rem
+  margin-bottom: 2rem
+  background:
+    repeat: no-repeat
+    position: bottom center
+    size: 200% auto
+  @media print, screen and (min-width: 64em)
+    background-size: auto auto
+    min-height: 872px
+  .desc
+    padding: 1rem
+    margin-bottom: 1rem
+    font-size: .9rem
+    background-color: rgba(0, 0, 0, 0.3)
+    color: #fff

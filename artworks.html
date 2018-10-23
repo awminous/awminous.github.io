@@ -1,0 +1,64 @@
+---
+layout: sub
+illust:
+  - title: My Missing Name&#58; Ostrich
+    permalink: ostrich
+  - title: My Missing Name&#58; Wavy Sea
+    permalink: wavysea
+  - title: My Missing Name&#58; Plane
+    permalink: plane
+  - title: Cube Kitchen
+    permalink: cubekitchen
+    category: illust
+char-design:
+  - title: Spectacle Fighters
+    permalink: specfighters
+  - title: Tiger Huntress
+    permalink: tigerhuntress
+  - title: Hippies
+    permalink: hippies
+  - title: Tank Girl
+    permalink: tankgirl
+bg-design:
+  - title: Hong Kong Corner
+    permalink: hkcorner
+  - title: Park
+    permalink: park
+  - title: Steampunk Trees
+    permalink: parktrees
+---
+
+<main class="subpg">
+  <div class="subpg-h1 artw-h1">
+    <div class="border01"></div>
+    <h1 class="text-center">Artworks</h1>
+  </div>
+  <div class="border02"></div>
+
+  <div class="artw-display grid-container">
+    <div class="grid-x grid-margin-x">
+      <h2 class="cell small-12 large-4 large-offset-4 text-head text-center">Illustrations</h2>
+      <div class="cell gallery grid-x grid-margin-x small-up-3 large-up-5">
+        {% for item in page.illust %}
+          <a href="{{ site.baseurl }}/gallery/art/illust/{{ item.permalink }}.jpg" class="cell thumbnail" title="{{ item.title }}"><img src="{{ site.baseurl }}/gallery/art/illust/{{ item.permalink }}_t.jpg" alt="{{ item.title }}"></a>
+        {% endfor %}
+      </div>
+      <section class="cell small-12 medium-6">
+        <h2 class="cell text-head text-center">Character Design</h2>
+          <div class="gallery grid-x grid-margin-x small-up-3">
+          {% for item in page.char-design %}
+          <a href="{{ site.baseurl }}/gallery/art/chardes/{{ item.permalink }}.jpg" class="cell thumbnail" title="{{ item.title }}"><img src="{{ site.baseurl }}/gallery/art/chardes/{{ item.permalink }}_t.jpg" alt="{{ item.title }}"></a>
+          {% endfor %}
+          </div>
+      </section>
+      <section class="cell small-12 medium-6">
+        <h2 class="cell text-head text-center">Background Design</h2>
+          <div class="gallery grid-x grid-margin-x small-up-3">
+          {% for item in page.bg-design %}
+          <a href="{{ site.baseurl }}/gallery/art/bgdes/{{ item.permalink }}.jpg" class="cell thumbnail" title="{{ item.title }}"><img src="{{ site.baseurl }}/gallery/art/bgdes/{{ item.permalink }}_t.jpg" alt="{{ item.title }}"></a>
+          {% endfor %}
+          </div>
+      </section>
+    </div>
+  </div>
+</main>

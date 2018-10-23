@@ -1,0 +1,80 @@
+---
+layout: sub
+anim:
+  - vimeo: 296246055
+    title: Dubai Sports Council
+    permalink: bgDBS
+    description: <p>Fayiz is a lively boy who aspires to become a professional athlete one day. Before he can reach his goals of playing amongst the big leagues, he needs to learn that winning is not solely about scoring the most points.</p>
+    credits:
+      - job: Character Assets
+      - job: Animation
+      - job: Post Production
+    art:
+      - title: Character Designs
+        permalink: dbs01
+      - title: Frame-by-Frame flying bird
+        permalink: dbs02
+  - vimeo: 296277511
+    title: Namoula the ant
+    permalink: bgNamoula
+    description: <p>Namoula loves to explore her world underground and overground. Lead by her curiosity, she meets new friends and discovers new lessons.</p> <p>This is a project with Bidaya Media.</p>
+    credits:
+      - job: Storyboard
+      - job: Artboards
+      - job: Animation
+    art:
+      - title: Artboards 1-9
+        permalink: nam01
+      - title: Storyboard pg 1
+        permalink: nam02
+      - title: Storyboard pg 2
+        permalink: nam03
+      - title: Storyboard pg 3
+        permalink: nam04
+---
+
+<main class="subpg">
+  <div class="subpg-h1 anim-h1">
+    <div class="border01"></div>
+    <h1 class="text-center">Animation</h1>
+  </div>
+  <div class="border02"></div>
+
+  {% for item in page.anim %}
+    <article class="anim-display" style="background-image:url('{{ site.baseurl }}/gallery/anim/{{ item.permalink }}.jpg')">
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <section class="cell small-12 large-8">
+            <div class="responsive-embed">
+              <iframe src="https://player.vimeo.com/video/{{ item.vimeo }}?portrait=0&byline=0&color=A6B340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </section>
+          <section class="cell small-12 large-4 desc">
+            <h2>{{ item.title }}</h2>
+            {{ item.description }}
+            {% if item.credits %}
+            <aside>
+              <h3>Responsiblities:</h3>
+                <ul>
+                  {% for item in item.credits %}
+                    <li>{{ item.job }}</li>
+                  {% endfor %}
+                </ul>
+            </aside>
+            {% endif%}
+          </section>
+        </div>
+      </div>
+      <section class="grid-container">
+        <div class="gallery grid-x grid-margin-x small-up-4">
+          {% if item.credits %}
+            {% for item in item.art %}
+              <a href="{{ site.baseurl }}/gallery/anim/{{ item.permalink }}.jpg" class="cell thumbnail" title="{{ item.title }}"><img src="{{ site.baseurl }}/gallery/anim/{{ item.permalink }}_t.jpg" alt="{{ item.title }}"></a>
+            {% endfor %}
+          {% endif%}
+        </div>
+        </section>
+    </article>
+  {% endfor %}
+
+</main>

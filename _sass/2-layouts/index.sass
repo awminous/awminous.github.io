@@ -1,0 +1,73 @@
+body
+  background:
+    image: url("../img/pattern01.jpg")
+    position: top center $bgyellow
+
+.below-5
+  margin-bottom: 3rem
+  @media print, screen and (min-width: 40em)
+    margin-bottom: 5rem
+
+.responsive-embed iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+//Header
+header.indexpg
+    @media print, screen and (min-width: 40em)
+      background: url("../img/headertile01x1080.jpg") repeat-x
+header
+  .hero 
+    min-height: 700px
+    background: url("../img/headerbgx1080.jpg") no-repeat bottom center
+    background-size: auto 700px
+    @media print, screen and (min-width: 40em)
+      min-height: 900px
+      background-size: auto auto
+    @media print, screen and (min-width: 64em)
+      min-height: 1080px
+
+//Main
+main .border01 
+  min-height: 62px
+  background: url("../img/border01.png") $borderpos
+
+main .border02 
+  margin: -50px 0px 3rem
+  min-height: 62px
+  background: url("../img/border02.png") $borderpos
+
+//Special Main
+main .mountains
+  margin-top: -60px
+  display: block
+  width: 100%
+  min-height: 8rem
+  background: url("../img/headerborder01.png") $borderpos
+  @media print, screen and (min-width: 40em)
+    margin-top: -120px
+    min-height: 10rem
+  
+.recent 
+  min-height: 511px
+  background: url("../img/recentlyDBS.jpg") no-repeat top center #244538
+
+.recent .grid-container 
+  padding-top: 1rem
+  padding-bottom: 1rem
+
+.desc p
+  color: #fff
+  
+//Footer
+footer 
+  padding-top: 5rem
+  background: url("../img/footerbg.png") $borderpos
+
+footer .copyright 
+  margin-top: 1rem
+  padding: .5rem 0
+  background: $bluegreen
