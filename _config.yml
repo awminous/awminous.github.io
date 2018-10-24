@@ -16,7 +16,7 @@
 title: Awminous Productions
 email: gothicdork@gmail.com
 description: Awminous Productions is a 2-person team of quirky artists named Arianne and Wesley. We love cartoons so we learned how to make them through drawing and animating.
-baseurl: "/awminous" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://awminous.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_path: https://twitter.com/awminousprod
 instagram_path: https://instagram.com/awminousprod
