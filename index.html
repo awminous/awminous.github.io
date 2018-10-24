@@ -1,0 +1,89 @@
+---
+layout: main
+demo_reel: 296464673
+recent_video: 296246055
+recent_title: Dubai Sports Council
+recent_permalink: dubaisportcouncil
+recent_blurb: <p>Meet Fayiz, a lively boy who aspires to become a professional athlete one day. Before he can reach his goals of playing amongst the big leagues, he needs to learn that winning is not solely about scoring the most points.</p><p>We were in charge of creating the character assets; animating with After Effects ;and adding music and sound fx. </p>
+recent_gallery:
+  - title: My Missing Name&#58; Wavy Sea
+    permalink: wavysea
+    category: illust
+  - title: Cube Kitchen
+    permalink: cubekitchen
+    category: illust
+  - title: Spectacle Fighters
+    permalink: specfighters
+    category: chardes
+  - title: Tiger Huntress
+    permalink: tigerhuntress
+    category: chardes
+---
+
+<header class="indexpg" id="top">
+	<div class="hero">
+		<div class="grid-container">
+			<div class="grid-x">
+					{% include nav.html%}
+				<div class="large-12 cell">
+					<div class="responsive-embed"><iframe src="https://player.vimeo.com/video/{{ page.demo_reel }}?portrait=0&byline=0&title=0&color=A6B340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main class="indexpg">
+  <div class="mountains"></div>
+  <div class="grid-container">
+    <div class="grid-x">
+      <h1 class="cell small-12 large-4 large-offset-4 text-head text-center">Recently</h1>
+    </div>
+  </div>
+
+  <article class="recent">
+    <div class="border01"></div>
+    <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <section class="cell small-12 large-6">
+          <div class="responsive-embed"><iframe src="https://player.vimeo.com/video/{{ page.recent_video }}?portrait=0&byline=0&color=A6B340" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        </section>
+        <section class="cell small-12 large-6 desc below-5">
+          <h2><img src="img/{{ page.recent_permalink }}.png" alt="Dubai Sports Council" title="{{ page.recent_title }}"></h2>
+          {{ page.recent_blurb }}
+          <a href="{{ site.baseurl }}/animation" title="More Animation" class="button more float-right">More Animations <img src="img/arrow.png"></a>
+        </section>
+      </div>
+    </div>
+  </article>
+  <div class="border02"></div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+			<h2 class="cell"><img src="img/thegallery.png" alt="The Gallery" title="The Gallery"></h2>
+		  <div class="gallery grid-x grid-margin-x small-up-2 medium-up-4 large-up-4">
+        {% for item in page.recent_gallery %}
+        <a href="gallery/art/{{ item.category }}/{{ item.permalink }}.jpg" class="cell thumbnail" title="{{ item.title }}"><img src="gallery/art/{{ item.category }}/{{ item.permalink }}_t.jpg" alt="{{ item.title }}"></a>
+        {% endfor %}
+		  </div>
+		  <div class="cell below-5">
+      <a href="{{ site.baseurl }}/artworks" title="More Artworks" class="button more float-right">More Artworks <img src="img/arrow.png"></a>
+		  </div>
+
+      <section class="cell small-12 large-6 below-5">
+        <h2 class="text-head text-center">What We Do</h2>
+        <ul class="menu expanded align-center">
+          <li><img src="img/anim01.png" title="Animation" alt="Animation"></li>
+          <li><img src="img/preprod01.png" title="Preproduction" alt="Preproduction"></li>
+          <li><img src="img/illust01.png" title="Illustration" alt="Illustration"></li>
+        </ul>
+      </section>
+      <section class="cell small-12 large-6 below-5">
+        <h2 class="text-head text-center">Who We Are</h2>
+        <p>{{ site.description }}</p>
+        <div class="cell">
+          <a href="{{ site.baseurl }}/about" title="More Artworks" class="button more float-right">Find out more <img src="img/arrow.png"></a>
+        </div>
+      </section>
+		</div>
+  </div>
+</main>
