@@ -3,7 +3,7 @@ layout: sub
 anim:
   - vimeo: 296246055
     title: Dubai Sports Council
-    permalink: bgDBS
+    permalink: DBS
     description: <p>Fayiz is a lively boy who aspires to become a professional athlete one day. Before he can reach his goals of playing amongst the big leagues, he needs to learn that winning is not solely about scoring the most points.</p>
     credits:
       - job: Character Assets
@@ -16,7 +16,7 @@ anim:
         permalink: dbs02
   - vimeo: 296277511
     title: Namoula the ant
-    permalink: bgNamoula
+    permalink: Namoula
     description: <p>Namoula loves to explore her world underground and overground. Lead by her curiosity, she meets new friends and discovers new lessons.</p> <p>This is a project with Bidaya Media.</p>
     credits:
       - job: Storyboard
@@ -31,6 +31,12 @@ anim:
         permalink: nam03
       - title: Storyboard pg 3
         permalink: nam04
+  - vimeo: 301463873
+    title: El Americano
+    permalink: ElAmericano
+    description: <p>A project under Cutting Edge Productions in cooperation with Boxel Studio.</p>
+    credits:
+      - job: 3D Character Animation
 ---
 
 <main class="subpg">
@@ -50,7 +56,7 @@ anim:
             </div>
           </section>
           <section class="cell small-12 large-4 desc">
-            <h2>{{ item.title }}</h2>
+            <a anchor="{{ item.permalink }}"><h2>{{ item.title }}</h2></a>
             {{ item.description }}
             {% if item.credits %}
             <aside>
