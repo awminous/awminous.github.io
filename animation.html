@@ -56,7 +56,7 @@ anim:
             </div>
           </section>
           <section class="cell small-12 large-4 desc">
-            <a anchor="{{ item.permalink }}"><h2>{{ item.title }}</h2></a>
+            <a name="{{ item.permalink }}"></a><h2>{{ item.title }}</h2>
             {{ item.description }}
             {% if item.credits %}
             <aside>
