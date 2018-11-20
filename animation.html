@@ -65,6 +65,7 @@ anim:
   <div class="border02"></div>
 
   {% for item in page.anim %}
+    <a name="{{ item.permalink }}"></a>
     <article class="anim-display" style="background-image:url('{{ site.baseurl }}/gallery/anim/{{ item.permalink }}.jpg')">
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
@@ -74,7 +75,7 @@ anim:
             </div>
           </section>
           <section class="cell small-12 large-4 desc">
-            <a name="{{ item.permalink }}"></a><h2>{{ item.title }}</h2>
+            <h2>{{ item.title }}</h2>
             {{ item.description }}
             {% if item.credits %}
             <aside>
